@@ -22,14 +22,12 @@ public abstract class Animal {
         pet();
         System.out.println("");
     }
-    public final void animalStatus(){
     
-    }
-    //These methods have different implementations for different types of Animals.
+    //These methods have different implementations for different types of Animals. Will show them in the concrete animal classes.
     public abstract void cleanToilets();
     public abstract void pet();
     
-    //The following methods have similar implementations for different types of Animals.
+    //The following methods have similar implementations for different types of Animals. So, I have implemented them here.
     public void feed(){
         if(!this.hasFood()){
             this.setHasFood(true);
@@ -51,12 +49,18 @@ public abstract class Animal {
         }
     }
  
+
+    //The testing method which turns every attribute to false.
     public void twelveHours(){
        this.hasWater = false;
        this.hasFood = false;
        this.isPetted = false;
        this.hasCleanToilet = false; 
     }
+
+
+
+    //The getters and setters.
     public String getName() {
         return this.name;
     }

@@ -45,6 +45,8 @@ public class Tracker implements Subject{
         System.out.println("\n*No such pet in your pack!*\n");
     }
     
+
+    //careAnimal method is just 10 lines of code, if you use the interface to interact with the animal.
     public void careAnimal(String name){
         for (Animal animal : animals) {
             if(animal.getName().equals(name)){
@@ -55,11 +57,15 @@ public class Tracker implements Subject{
         }
         System.out.println("\n*No such pet in your pack!*\n");
     }
+    
+    //This is even shorter thanks to the careAnimal method.
     public void careAnimals(){
         for (Animal animal : animals) {
             animal.careAnimal();
         }
     }
+
+
 
     //The following are the mandatory methods of subject interface.
     
@@ -97,7 +103,11 @@ public class Tracker implements Subject{
     }
 
     //The following are the wrong implementations that i have made
-
+    // I have implemented all the care methods inside of this class unnecessarily
+    // Before careAnimal method it was such a mess in here.
+    // There are almost 50 lines of wrong implementation.
+    
+    
     // public void feedAll(ArrayList<Animal> animals){
     //     for (Animal animal : animals) {
     //         animal.feed();

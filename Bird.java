@@ -4,6 +4,7 @@ public class Bird extends Animal{
         super(name, age);
     }
 
+    //The implementation of the abstract method for the concrete class.
     @Override
     public void cleanToilets() {
         if(!this.hasCleanToilet()){
@@ -14,7 +15,8 @@ public class Bird extends Animal{
             System.out.println(this.getName()+ "'s cage is already clean.");
         }
     }
-
+    
+    //The implementation of the abstract method for the concrete class.
     @Override
     public void pet() {
         if(!this.isPetted()){

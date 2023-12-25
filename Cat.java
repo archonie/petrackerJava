@@ -1,3 +1,5 @@
+
+//The Cat class extends the Animal abstract class
 public class Cat extends Animal{
     
 
@@ -6,6 +8,8 @@ public class Cat extends Animal{
         super(name, age);
     }
 
+
+    // The abstract method's implementation specific to the concrete Cat class.
     @Override
     public void cleanToilets() {
         if(!this.hasCleanToilet()){
@@ -17,6 +21,7 @@ public class Cat extends Animal{
         }
     }   
 
+    //The abstract method's implementation specific to the concrete Cat class
     @Override
     public void pet() {
         if(!this.isPetted()){

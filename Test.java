@@ -43,7 +43,10 @@ public class Test {
                     tracker.removeObserver(existing);
                 }
                 else if(choice == 3){
-
+    //This is the difference simple factory made.
+    //I did not removed the unnecessary lines, I have turned them into comment lines.
+    //So, as you see the total lenght of the first implementation was the twice of the new implementation.
+                    
                     System.out.print("Please enter new pet's type (Cat or Bird): ");
                     String type = scan.nextLine().trim();
                     // if(type.equals("Cat")){
